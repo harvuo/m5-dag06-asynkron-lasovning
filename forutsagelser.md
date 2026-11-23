@@ -23,6 +23,6 @@ Regler:
 
 ## Tre meningar med egna ord
 
-1. JavaScript väntar inte på `setTimeout`, utan ...
-2. En promise har tre tillstånd: ...
-3. `then` körs alltid ...
+1. JavaScript väntar inte på `setTimeout`, utan lägger den i task-kön för väntan på exekvering.
+2. En promise har tre tillstånd: pending (pågår), fullfilled(klar med lyckat resultat) och rejected (misslyckat eller fel).
+3. `then` körs alltid efter fullfilled (först exekveras dock den synkrona koden i stacken).
